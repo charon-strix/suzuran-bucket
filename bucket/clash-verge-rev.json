@@ -3,7 +3,6 @@
     "description": "Another Clash Meta GUI based on tauri.",
     "homepage": "https://github.com/wonfen/clash-verge-rev",
     "license": "GPL-3.0-only",
-    "notes": "",
     "architecture": {
         "64bit": {
             "url": "https://github.com/wonfen/clash-verge-rev/releases/download/v1.4.1/Clash.Verge_1.4.1_x64_portable.zip",
