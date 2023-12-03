@@ -1,0 +1,49 @@
+{
+    "version": "2.6.7",
+    "description": "An image upload and manage tool, base on PicGo.",
+    "homepage": "https://github.com/Kuingsmile/PicList",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Kuingsmile/PicList/releases/download/v2.6.7/PicList-Setup-2.6.7-x64.exe#/dl.7z",
+            "hash": "sha512:5ecf27fc740587b6ccdcace89ef3372f2b82760e2b40d60257ba1ae417e6db8ee3e18e4d474cb237138d6cebc9743ac53be61baa8d1748502acd890e71d9e20d",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
+            ]
+        },
+        "32bit": {
+            "url": "https://github.com/Kuingsmile/PicList/releases/download/v2.6.7/PicList-Setup-2.6.7-ia32.exe#/dl.7z",
+            "hash": "sha512:b1dd073c0aed82e2b9a6b775ea66f04e4e309ec69c7846aaecb7018f4695e3f70c93d62d8df1300c159d71aad869aa763be634ca88af7945338c229293024169",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
+            ]
+        }
+    },
+    "bin": "PicList.exe",
+    "shortcuts": [
+        [
+            "PicList.exe",
+            "PicList"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/Kuingsmile/PicList/releases",
+        "regex": "/PicList-Setup-([\\d.]+)-(x64|ia32)\\.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Kuingsmile/PicList/releases/download/v$version/PicList-Setup-$version-x64.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/Kuingsmile/PicList/releases/download/v$version/PicList-Setup-$version-ia32.exe#/dl.7z"
+            }
+        },
+        "hash": {
+            "url": "$baseurl/latest.yml",
+            "regex": "(?s)$basename.*?$base64"
+        }
+    }
+}
