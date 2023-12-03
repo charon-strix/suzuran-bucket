@@ -1,12 +1,12 @@
 {
-    "version": "2.6.6",
+    "version": "2.6.7",
     "description": "An image upload and manage tool, base on PicGo.",
     "homepage": "https://github.com/Kuingsmile/PicList",
     "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Kuingsmile/PicList/releases/download/v2.6.7/PicList-Setup-2.6.7-x64.exe#/dl.7z",
-            "hash": "sha512:17bce159bbe7bef2e6e6629087562c9b824723f8e380b4520d7dba2c5b8a0cf9521a1f27bb5afa4d7441984f70aa1ee28d0a64509857cbd35d0b607d03dfc578",
+            "hash": "sha512:e7bce159bbe7bef2e6e6629087562c9b824723f8e380b4520d7dba2c5b8a0cf9521a1f27bb5afa4d7441984f70aa1ee28d0a64509857cbd35d0b607d03dfc578",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
