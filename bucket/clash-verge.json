@@ -1,6 +1,6 @@
 {
     "version": "1.4.2",
-    "description": "Another Clash Meta GUI based on tauri.",
+    "description": "A Clash Meta GUI based on tauri.",
     "homepage": "https://github.com/wonfen/clash-verge-rev",
     "license": "GPL-3.0-only",
     "architecture": {
