@@ -22,12 +22,7 @@
         }
     },
     "bin": "PicList.exe",
-    "shortcuts": [
-        [
-            "PicList.exe",
-            "PicList"
-        ]
-    ],
+    "shortcuts": [["PicList.exe", "PicList"]],
     "checkver": "github",
     "autoupdate": {
         "architecture": {

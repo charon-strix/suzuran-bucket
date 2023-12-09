@@ -10,17 +10,8 @@
         }
     },
     "extract_dir": "nekoray",
-    "bin": [
-        "nekobox_core.exe",
-        "nekoray.exe",
-        "nekoray_core.exe"
-    ],
-    "shortcuts": [
-        [
-            "nekoray.exe",
-            "Nekoray"
-        ]
-    ],
+    "bin": ["nekobox_core.exe", "nekoray.exe", "nekoray_core.exe"],
+    "shortcuts": [["nekoray.exe", "Nekoray"]],
     "persist": "config",
     "checkver": "github",
     "autoupdate": {

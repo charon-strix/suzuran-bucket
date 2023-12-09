@@ -9,12 +9,7 @@
             "hash": "b22a9f67e752ad20e0041bced128e8299f7c4ebbaf68aa0cf4efcac30e98d99e"
         }
     },
-    "shortcuts": [
-        [
-            "Clash Nyanpasu.exe",
-            "Clash Nyanpasu"
-        ]
-    ],
+    "shortcuts": [["Clash Nyanpasu.exe", "Clash Nyanpasu"]],
     "persist": ".config",
     "post_install": [
         "if (!(Test-Path \"$persist_dir\\.config\\PORTABLE\")) {",

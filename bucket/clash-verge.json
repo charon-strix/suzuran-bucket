@@ -9,12 +9,7 @@
             "hash": "341ac819835db48dc1b1b7695d21b5729589886ee9596ab441785d3af3c5ca7c"
         }
     },
-    "shortcuts": [
-        [
-            "Clash Verge.exe",
-            "Clash Verge"
-        ]
-    ],
+    "shortcuts": [["Clash Verge.exe", "Clash Verge"]],
     "persist": ".config",
     "post_install": [
         "if (!(Test-Path \"$persist_dir\\.config\\PORTABLE\")) {",

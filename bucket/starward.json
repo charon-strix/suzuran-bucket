@@ -10,12 +10,7 @@
         }
     },
     "extract_dir": "Starward",
-    "shortcuts": [
-        [
-            "Starward.exe",
-            "Starward"
-        ]
-    ],
+    "shortcuts": [["Starward.exe", "Starward"]],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
