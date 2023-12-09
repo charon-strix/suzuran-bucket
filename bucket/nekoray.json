@@ -1,6 +1,6 @@
 {
     "version": "3.26",
-    "description": "Qt/C++ based cross-platform proxy configuration manager / v2ray sing-box GUI client",
+    "description": "Qt based cross-platform GUI proxy configuration manager (v2ray/sing-box GUI client)",
     "homepage": "https://github.com/MatsuriDayo/nekoray",
     "license": "GPL-3.0-only",
     "architecture": {
