@@ -22,10 +22,7 @@
         ]
     ],
     "persist": "config",
-    "checkver": {
-        "url": "https://api.github.com/repositories/488177011/releases/latest",
-        "regex": "nekoray-([\\d.]+)-(?<extra>[\\d-]+)-windows64"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {

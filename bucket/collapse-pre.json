@@ -16,7 +16,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/CollapseLauncher/Collapse/releases.atom",
+        "url": "https://api.github.com/repos/CollapseLauncher/Collapse/releases",
         "regex": "tag/CL-v([\\d.]+)-pre"
     },
     "autoupdate": {
