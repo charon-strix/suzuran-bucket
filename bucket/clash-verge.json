@@ -1,15 +1,20 @@
 {
-    "version": "1.4.3",
+    "version": "1.4.4",
     "description": "A Clash Meta GUI based on tauri.",
     "homepage": "https://github.com/clash-verge-rev/clash-verge-rev",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.4.3/Clash.Verge_1.4.3_x64_portable.zip",
-            "hash": "341ac819835db48dc1b1b7695d21b5729589886ee9596ab441785d3af3c5ca7c"
+            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.4.4/Clash.Verge_1.4.4_x64_portable.zip",
+            "hash": "d4fc14937bd47b3735b0159426045df9f3308853828f8456d584675673657019"
         }
     },
-    "shortcuts": [["Clash Verge.exe", "Clash Verge"]],
+    "shortcuts": [
+        [
+            "Clash Verge.exe",
+            "Clash Verge"
+        ]
+    ],
     "persist": ".config",
     "post_install": [
         "if (!(Test-Path \"$persist_dir\\.config\\PORTABLE\")) {",
