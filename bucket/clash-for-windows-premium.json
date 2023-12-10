@@ -1,11 +1,11 @@
 {
-    "version": "2.1",
+    "version": "1",
     "description": "A Windows GUI based on Clash (modified version)",
     "homepage": "https://github.com/AiKirito/Clash_For_Windows_Ultra",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AiKirito/Clash_For_Windows_Ultra/releases/latest/download/Clash.For.Windows.v3.0.Ultra.x86_64.Premium.zip",
+            "url": "https://github.com/AiKirito/Clash_For_Windows_Ultra/releases/download/mod2/Clash.For.Windows.v3.0.Ultra.x86_64.Premium.zip",
             "hash": "88db22840497c067c073ab2415fff6fe71f633d64af2fca62c37859ffba1640c"
         }
     },
@@ -36,11 +36,14 @@
         ]
     ],
     "persist": "data",
-    "checkver": "github",
+     "checkver": {
+        "url": "https://github.com/AiKirito/Clash_For_Windows_Ultra/releases.atom",
+        "regex": "tag/mod([\\d.]+)"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/AiKirito/Clash_For_Windows_Ultra/releases/latest/download/Clash.For.Windows.v$version.Ultra.x86_64.Premium.zip"
+                "url": "https://github.com/AiKirito/Clash_For_Windows_Ultra/releases/download/mod&version/Clash.For.Windows.v$matchExtra.Ultra.x86_64.Premium.zip"
             }
         }
     }
