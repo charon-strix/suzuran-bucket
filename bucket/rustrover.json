@@ -6,7 +6,6 @@
         "identifier": "Apache-2.0",
         "url": "https://sales.jetbrains.com/hc/en-gb/articles/115001015290-Where-can-I-find-the-EULA-End-User-License-Agreement-"
     },
-
     "extract_to": "IDE",
     "installer": {
         "script": [
