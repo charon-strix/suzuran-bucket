@@ -6,6 +6,8 @@
         "identifier": "Apache-2.0",
         "url": "https://sales.jetbrains.com/hc/en-gb/articles/115001015290-Where-can-I-find-the-EULA-End-User-License-Agreement-"
     },
+    "url": "https://download.jetbrains.com/rustrover/RustRover-2024.1.4.exe#/dl.7z",
+    "hash": "fe2b6ad05492797a6deb3a415e4e81fda10f9799449d1b97159a2294dcf1d834",
     "extract_to": "IDE",
     "installer": {
         "script": [
@@ -15,26 +17,34 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download.jetbrains.com/rustrover/RustRover-2024.1.4.exe#/dl.7z",
-            "hash": "fe2b6ad05492797a6deb3a415e4e81fda10f9799449d1b97159a2294dcf1d834"
+            "bin": [
+                [
+                    "IDE\\bin\\rustrover64.exe",
+                    "JetBrains\\RustRover"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "IDE\\bin\\rustrover64.exe",
+                    "JetBrains\\RustRover"
+                ]
+            ]
         },
-        "arm64": {
-            "url": "https://download.jetbrains.com/rustrover/RustRover-2024.1.4-aarch64.exe#/dl.7z",
-            "hash": "271092fe73df085c76bf190454fab4403c757b589f5017a40a31e75905880c7a"
+        "32bit": {
+            "bin": [
+                [
+                    "IDE\\bin\\rustrover.exe",
+                    "JetBrains\\RustRover"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "IDE\\bin\\rustrover.exe",
+                    "JetBrains\\RustRover"
+                ]
+            ]
         }
     },
-    "bin": [
-        [
-            "IDE\\bin\\rustrover64.exe",
-            "JetBrains\\RustRover"
-        ]
-    ],
-    "shortcuts": [
-        [
-            "IDE\\bin\\rustrover64.exe",
-            "JetBrains\\RustRover"
-        ]
-    ],
     "persist": [
         "IDE\\bin\\idea.properties",
         "profile"
@@ -54,7 +64,7 @@
             }
         },
         "hash": {
-            "url": "$baseurl.sha256"
+            "url": "$url.sha256"
         }
     }
 }
