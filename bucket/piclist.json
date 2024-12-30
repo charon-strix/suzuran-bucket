@@ -1,20 +1,20 @@
 {
-    "version": "2.9.6",
+    "version": "2.9.7",
     "description": "An image upload and manage tool, base on PicGo.",
     "homepage": "https://github.com/Kuingsmile/PicList",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Kuingsmile/PicList/releases/download/v2.9.6/PicList-Setup-2.9.6-x64.exe#/dl.7z",
-            "hash": "sha512:be9ae89a72b596055feaac64e5f6939f60fdc618cf77448d7426c3e65cc026f94e7e8ff5b98faac78a4b9b22a5ab7c2fdfa09255b6a224d9fef24f5bb9c00cf3",
+            "url": "https://github.com/Kuingsmile/PicList/releases/download/v2.9.7/PicList-Setup-2.9.7-x64.exe#/dl.7z",
+            "hash": "sha512:71c33a5a5ec7696d30f2938ebe0db4a1a161a0aa06828636adbc9d20ff87d61dfa1d58f868e06c4f63a13ad86a4b6176362c68050e2fb7750ad4a421fc00ded1",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
             ]
         },
         "32bit": {
-            "url": "https://github.com/Kuingsmile/PicList/releases/download/v2.9.6/PicList-Setup-2.9.6-ia32.exe#/dl.7z",
-            "hash": "sha512:a334876523e658dd404e9e3cd7b6a6de16babbb2fcc01b4da827e7f34104f2f010fef9b5ff6b0cfe5f09f939e7e499a131e9fac643c5f576310d09db178b31c2",
+            "url": "https://github.com/Kuingsmile/PicList/releases/download/v2.9.7/PicList-Setup-2.9.7-ia32.exe#/dl.7z",
+            "hash": "sha512:1314296f9b9550d71429b7e883f172457eded1d18e9c58fcb19a3876b2fdcc4955572205cfb683f3b90202d61c7c65f482fdfbce876569e61b9d5938faaf5536",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Recurse"
